@@ -7,11 +7,11 @@ const Hero = () => {
     <>
       <section>
         <div className="min-h-screen max-w-[1400px] mx-auto px-10 flex md:flex-row flex-col justify-center items-center md:pt-25 pt-35">
-          <div className="flex-1">
+          <div className="flex-1 text-center md:text-left">
             <span className="bg-orange-100 text-orange-500 text-xl rounded-full px-5 py-2">
               export best quality...
             </span>
-            <h1 className="md:text-7xl/20 text-5xl/14 mt-4 font-bold">
+            <h1 className="md:text-7xl/20 text-4xl/14 mt-4 font-bold">
               tasty organic <span className="text-orange-500">fruits</span> &{" "}
               <span className="text-orange-500">veggies</span>
               <br /> in your city
@@ -24,7 +24,7 @@ const Hero = () => {
           </div>
 
           <div className="flex-1">
-            <img src={Grocery} alt="Hero Image"/>
+            <img src={Grocery} alt="Hero Image" className="py-8"/>
           </div>
         </div>
       </section>

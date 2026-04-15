@@ -5,7 +5,11 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   text-transform: capitalize;
+  
   /* box-sizing: border-box; */
+}
+html{
+  scroll-behavior: smooth;
 }
 
 /* *{

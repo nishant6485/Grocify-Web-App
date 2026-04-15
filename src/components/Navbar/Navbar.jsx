@@ -50,7 +50,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#process"
                 className="font-semibold tracking-wide text-zinc-800 hover:text-orange-500"
               >
                 Process
@@ -58,7 +58,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#contactus"
                 className="font-semibold tracking-wide text-zinc-800 hover:text-orange-500"
               >
                 Contact Us
@@ -89,13 +89,12 @@ const Navbar = () => {
 
             {/* HamBurger */}
 
-            <a
-              href="#"
+            <button
               className="text-zinc-800 text-3xl md:hidden"
               onClick={toggleMenu}
             >
               {showMenu ? <TbMenu3 /> : <TbMenu2 />}
-            </a>
+            </button>
           </div>
 
           {/* mobile menu */}
@@ -106,6 +105,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
+                onClick={() => setShowMenu(false)}
                 className="font-semibold tracking-wide text-orange-500"
               >
                 Home
@@ -114,6 +114,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
+                onClick={() => setShowMenu(false)}
                 className="font-semibold tracking-wide text-zinc-800 hover:text-orange-500"
               >
                 About Us
@@ -121,7 +122,8 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#process"
+                onClick={() => setShowMenu(false)}
                 className="font-semibold tracking-wide text-zinc-800 hover:text-orange-500"
               >
                 Process
@@ -129,7 +131,8 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#contactus"
+                onClick={() => setShowMenu(false)}
                 className="font-semibold tracking-wide text-zinc-800 hover:text-orange-500"
               >
                 Contact Us
